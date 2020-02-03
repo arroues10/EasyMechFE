@@ -1,0 +1,19 @@
+<h1>All mechanics</h1>
+<button class="topRight" routerLink="/create-mechanic">+ Mechanic</button>
+<button class="topRight" routerLink="/create-store-keeper">+ Store keeper</button>
+<button class="topRight" routerLink="/create-advisor">+ Advisor</button>
+<div>
+    <h1 *ngIf="!allMechanics"><img src="/assets/images/gifLoading.txt"></h1>
+    <table *ngIf="allMechanics" class="table table-dark">
+        <tr>
+            <th>id</th>
+            <th>name</th>
+            <th>work card</th>
+        </tr>
+        <tr *ngFor="let m of allMechanics">
+            <td>{{m.id}}</td>
+            <td>{{m.name}}</td>
+        <td>{{m.work_card_plate_number}}</td>
+        </tr>
+    </table>
+</div>

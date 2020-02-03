@@ -1,0 +1,5 @@
+<form #formInfo="ngForm">
+    <input type="text" placeholder="Plate number" #plateNumberInfo="ngModel" [(ngModel)]="workCard.plateNumber" name="plateNumber"><br><br>
+    <input type="text" placeholder="Garage code" #garageCodeInfo="ngModel" [(ngModel)]="workCard.garageCode" name="garageCode"><br><br>
+    <button (click)="addWorkCard()">Submit</button>
+</form>

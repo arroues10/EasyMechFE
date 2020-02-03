@@ -1,0 +1,14 @@
+<h1>All Work Cards</h1>
+<div>
+    <h1 *ngIf="!allMechanicWorkCards"><img src="/assets/images/gifLoading.txt"></h1>
+    <table *ngIf="allMechanicWorkCards" class="table table-dark">
+        <tr>
+            <th>id</th>
+            <th>plate number</th>
+        </tr>
+        <tr *ngFor="let w of allMechanicWorkCards">
+            <td>{{w.id}}</td>
+            <td>{{w.plateNumber}}</td>
+        </tr>
+    </table>
+</div>

@@ -1,0 +1,6 @@
+<a class="topRight" routerLink="/work-card-parts/{{workCardId}}"><img width=50px src="/assets/images/logoBack.png"></a>
+<form #formInfo="ngForm">
+    <input type="number" placeholder="original price " #originalPriceInfo="ngModel" [(ngModel)]="part.originalPrice" name="originalPrice"><br><br>
+    <input type="number" placeholder="replacement price" #replacementPriceInfo="ngModel" [(ngModel)]="part.replacementPrice" name="replacementPrice"><br><br>
+    <button (click)="setPrices()">send</button>
+</form>

@@ -1,0 +1,13 @@
+<button (click)="setEndWork()">Done working</button>
+
+<form [formGroup]="addPartsForm" (ngSubmit)="onSubmitForm()">
+    <div formArrayName="newParts">
+        <h3>Parts to change</h3><br>
+        <div *ngFor="let partControl of getParts().controls; let i = index">
+            <input type="text" placeholder="new part {{i+1}}" [formControlName]="i"><br><br>
+        </div>
+        <button type="button" (click)="onAddPart()">add part</button>
+    </div>
+    <br>
+    <button type="submit" [disabled]="addPartsForm.invalid">submit</button>
+</form>

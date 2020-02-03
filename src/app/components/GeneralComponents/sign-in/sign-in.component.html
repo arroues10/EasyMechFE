@@ -1,0 +1,33 @@
+<h1>Sign in</h1><br>
+
+<form #formInfo="ngForm">
+    <input type="text" placeholder="Name" #nameInfo="ngModel" [(ngModel)]="name" name="name"><br><br>
+    <input type="text" placeholder="Password" #passwordInfo="ngModel" [(ngModel)]="password" name="password"><br><br>
+    <input type="text" placeholder="garage code" #garageCodeInfo="ngModel" [(ngModel)]="garageCode" name="garageCode"><br><br>
+
+
+    <div class="custom-control custom-radio">
+        <input class="custom-control-input" type="radio" #loginTypeInfo="ngModel" [(ngModel)]="loginType" name="MECHANIC" value="MECHANIC"
+            id="item1">
+        <label class="custom-control-label" for="item1">Mechanic</label>
+    </div>&nbsp;&nbsp;
+    
+    <div class="custom-control custom-radio">
+        <input class="custom-control-input" type="radio" #loginTypeInfo="ngModel" [(ngModel)]="loginType" name="MANAGER" value="MANAGER" id="item2">
+        <label class="custom-control-label" for="item2">Manager</label>
+    </div>&nbsp;&nbsp;
+
+    <div class="custom-control custom-radio">
+        <input class="custom-control-input" type="radio" #loginTypeInfo="ngModel" [(ngModel)]="loginType" name="ADVISOR" value="ADVISOR" id="item3">
+        <label class="custom-control-label" for="item3">Advisor</label>
+    </div>&nbsp;&nbsp;
+    
+    <div class="custom-control custom-radio">
+        <input class="custom-control-input" type="radio" #loginTypeInfo="ngModel" [(ngModel)]="loginType" name="STOREKEEPER" value="STOREKEEPER"
+            id="item4">
+        <label class="custom-control-label" for="item4">Store Keeper</label>
+    </div>
+    <br><br>
+
+    <button (click)="signIn()">Sign In</button>
+</form><br>

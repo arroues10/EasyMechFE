@@ -1,0 +1,7 @@
+
+<form #formInfo="ngForm">
+    <input type="text" placeholder="Name" #nameInfo="ngModel" [(ngModel)]="advisor.name" name="name"><br><br>
+    <input type="text" placeholder="Password" #passwordInfo="ngModel" [(ngModel)]="advisor.password" name="password"><br><br>
+    <input type="text" placeholder="garage code" #garageCodeInfo="ngModel" [(ngModel)]="advisor.garageCode" name="garageCode"><br><br>
+<button (click)="createAdvisor()">create</button>
+</form>

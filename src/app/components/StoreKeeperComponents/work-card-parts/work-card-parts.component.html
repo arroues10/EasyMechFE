@@ -1,0 +1,23 @@
+<a class="topRight" routerLink="/all-work-cards"><img width=50px src="/assets/images/logoBack.png"></a>
+<h1>parts</h1>
+<div>
+    <h1 *ngIf="!parts"><img src="/assets/images/NoResultFound.png"></h1>
+    <table *ngIf="parts" class="table table-dark">
+        <tr>
+            <th>id</th>
+            <th>name</th>
+            <th>original price</th>
+            <th>replacement price</th>
+            <th>work card</th>
+            <th>quote</th>
+        </tr>
+        <tr *ngFor="let p of parts">
+            <td>{{p.id}}</td>
+            <td>{{p.name}}</td>
+            <td>{{p.originalPrice}}</td>
+            <td>{{p.replacementPrice}}</td>
+            <td>{{p.work_card_id}}</td>
+        <td><a routerLink="/quote/{{workCardId}}/{{p.id}}">quote</a></td>
+        </tr>
+    </table>
+</div>

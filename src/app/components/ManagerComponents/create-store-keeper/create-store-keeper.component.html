@@ -1,0 +1,7 @@
+
+<form #formInfo="ngForm">
+    <input type="text" placeholder="Name" #nameInfo="ngModel" [(ngModel)]="storeKeeper.name" name="name"><br><br>
+    <input type="text" placeholder="Password" #passwordInfo="ngModel" [(ngModel)]="storeKeeper.password" name="password"><br><br>
+    <input type="text" placeholder="garage code" #garageCodeInfo="ngModel" [(ngModel)]="storeKeeper.garageCode" name="garageCode"><br><br>
+<button (click)="createStoreKeeper()">create</button>
+</form>
