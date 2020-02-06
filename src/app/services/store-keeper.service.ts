@@ -13,7 +13,7 @@ export class StoreKeeperService {
         'Content-Type': 'application/json'
     });
 
-    private url = 'http://localhost:8080/api/storeKeepers/';
+    private url = 'https://easymechbe.herokuapp.com/api/storeKeepers/';
 
 
     constructor(private httpClient: HttpClient) { }

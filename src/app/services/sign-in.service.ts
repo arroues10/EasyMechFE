@@ -18,7 +18,7 @@ export class SignInService {
     constructor(private httpClient: HttpClient, private router: Router) { }
 
     public getLogin(name: string, password: string, loginType: string, garageCode: string): Observable<any> {
-        return this.httpClient.post('https://sheltered-atoll-76875.herokuapp.com/api/login?name='
+        return this.httpClient.post('https://easymechbe.herokuapp.com/api/login?name='
             + name + '&password=' + password + '&loginType=' + loginType.toUpperCase() + '&garageCode=' + garageCode, null, { responseType: 'text' });
     }
 

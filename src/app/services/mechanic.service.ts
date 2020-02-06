@@ -13,7 +13,7 @@ export class MechanicService {
         'Content-Type': 'application/json' 
     });
 
-    private url = 'http://localhost:8080/api/mechanics/';
+    private url = 'https://easymechbe.herokuapp.com/api/mechanics/';
 
     constructor(private httpClient: HttpClient) { }
 

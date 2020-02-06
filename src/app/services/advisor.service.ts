@@ -13,7 +13,7 @@ export class AdvisorService {
         'Content-Type': 'application/json'
     });
 
-    private url = 'http://localhost:8080/api/advisors/';
+    private url = 'https://easymechbe.herokuapp.com/api/advisors/';
 
     constructor(private httpClient: HttpClient) { }
 
