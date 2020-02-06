@@ -10,7 +10,7 @@ import { WorkCard } from '../models/workCard';
 export class MechanicService {
 
     headers = new HttpHeaders({
-        'Content-Type': 'application/json'
+        'Content-Type': 'application/json' 
     });
 
     private url = 'http://localhost:8080/api/mechanics/';
