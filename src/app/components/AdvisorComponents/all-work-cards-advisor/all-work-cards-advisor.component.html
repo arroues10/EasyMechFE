@@ -6,11 +6,13 @@
         <tr>
             <th>id</th>
             <th>plate number</th>
+            <th>description</th>
             <th>parts</th>
         </tr>
         <tr *ngFor="let w of allWorkCards">
             <td>{{w.id}}</td>
             <td>{{w.plateNumber}}</td>
+            <td>{{w.description}}</td>
             <td><a routerLink="/work-card-parts-advisor/{{w.id}}">show</a></td>
         </tr>
     </table>
