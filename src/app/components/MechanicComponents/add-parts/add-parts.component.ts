@@ -54,7 +54,7 @@ export class AddPartsComponent implements OnInit {
                 alert(text);
                 this.router.navigate(['/mechanic-page']);
             },
-                error => { alert(error.error.message); }
+                error => { alert('boul'); }
             );
     }
 
