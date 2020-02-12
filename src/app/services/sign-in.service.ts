@@ -51,8 +51,8 @@ export class SignInService {
         );
     }
 
-    public logout() {
+    public logOut() {
         localStorage.removeItem('token');
-        window.location.reload();
+        this.router.navigate(['/home']);
     }
 }

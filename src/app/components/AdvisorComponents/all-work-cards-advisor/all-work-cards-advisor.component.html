@@ -4,10 +4,10 @@
     <h1 *ngIf="!allWorkCards"><img src="/assets/images/gifLoading.txt"></h1>
     <table *ngIf="allWorkCards" class="table table-dark">
         <tr>
-            <th>id</th>
-            <th>plate number</th>
-            <th>description</th>
-            <th>parts</th>
+            <th>Id</th>
+            <th>Plate number</th>
+            <th>Description</th>
+            <th>Parts</th>
         </tr>
         <tr *ngFor="let w of allWorkCards">
             <td>{{w.id}}</td>
