@@ -49,13 +49,13 @@ export class AddPartsComponent implements OnInit {
             },
                 error => { alert(error.error.message); }
             );
-        this.mechanicService.addToEndWorkCards()
-            .subscribe(text => {
-                alert(text);
-                this.router.navigate(['/mechanic-page']);
-            },
-                error => { alert(error.error.message); }
-            );
+        // this.mechanicService.addToEndWorkCards()
+        //     .subscribe(text => {
+        //         alert(text);
+        //         this.router.navigate(['/mechanic-page']);
+        //     },
+        //         error => { alert(error.error.message); }
+        //     );
     }
 
 }

@@ -33,9 +33,9 @@ export class MechanicService {
         return this.httpClient.post(this.url + 'setEndWork/' + this.getToken(), null, { responseType: 'text' });
     }
 
-    public addToEndWorkCards(): Observable<any> {
-        return this.httpClient.post(this.url + 'addToEndWorkCards/' + this.getToken(), null, { responseType: 'text' });
-    }
+    // public addToEndWorkCards(): Observable<any> {
+    //     return this.httpClient.post(this.url + 'addToEndWorkCards/' + this.getToken(), null, { responseType: 'text' });
+    // }
 
     public getEndWorkCards(): Observable<WorkCard[]> {
         return this.httpClient.get<WorkCard[]>(this.url + 'getEndWorkCards/' + this.getToken());
