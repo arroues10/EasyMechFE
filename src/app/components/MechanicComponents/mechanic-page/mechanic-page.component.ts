@@ -1,7 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { MechanicService } from 'src/app/services/mechanic.service';
 import { Router } from '@angular/router';
-import { Message } from '@angular/compiler/src/i18n/i18n_ast';
 
 @Component({
     selector: 'app-mechanic-page',

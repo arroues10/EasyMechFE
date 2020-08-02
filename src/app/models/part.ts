@@ -7,6 +7,6 @@ export class Part {
         public name?: string,
         public originalPrice?: number,
         public replacementPrice?: number,
-        public work_card_id?: number
+        public work_card_plate_number?: string
     ) { }
 }
