@@ -1,4 +1,8 @@
+table{
+    margin-bottom:0;
+}
+
 div {
-    height: 82.9%;
+    height: 86%;
     overflow: auto;
 }
